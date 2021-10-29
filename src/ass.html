@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function fibonacci(n) {
+        var a=1;
+        var b=2;
+        var sum=0;
+        for(var i=3;i<=n;i++){
+            sum=a+b;
+            a=b;
+            b=sum;
+        }
+        alert(sum);
+    }
+</script>
+</head>
+
+<body>
+<input type="button" onclick="fibonacci(5)">
+</body>
+</html>
